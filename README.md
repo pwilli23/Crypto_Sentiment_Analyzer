@@ -25,11 +25,11 @@ Import the following libraries:
 
 ##  Installation Guide
 
-pandas: conda install pandas or pip install pandas
-pathlib: pip install pathlib
-requests: python -m pip install requests
-alpaca-trade-api: pip install alpaca-trade-api
-JSON: conda install -c jmcmurray json
+- pandas: conda install pandas or pip install pandas
+- pathlib: pip install pathlib
+- requests: python -m pip install requests
+- alpaca-trade-api: pip install alpaca-trade-api
+- JSON: conda install -c jmcmurray json
 
 -----
 
