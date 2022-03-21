@@ -8,7 +8,7 @@ The goal of this project is to help users make better investment decisions when 
 
 -----
 
-## Technologies / Installation Guide
+## Technologies
 
 This application is written in Python 3.7 using JupyterLab version 3.0.14.
 
@@ -16,11 +16,20 @@ Import the following libraries:
 
 - pandas (an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.)
 - Pathlib (a library that enables consistent input and output of files from the main app.)
-- hvPlot (a high-level plotting API for the PyData ecosystem built on HoloViews.)
-- scikit-learn (an open source machine learning library that supports supervised and unsupervised learning.)
-- plotly (an interactive, open-source, and browser-based graphing library for Python.)
-- seaborn (a visualization library that provides a high-level interface for drawing attractive and informative statistical graphics.)
-- prophet (a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects)
+- OS (an interface between the Python Programming Language and the Host Operating System.)
+- JSON (a lightweight data-interchange format inspired by JavaScript object literal syntax.)
+- Requests (an elegant and simple HTTP library for Python, built for human beings.)
+- Alpaca Trade API (a python library for the Alpaca Commission Free Trading API. It allows rapid trading algo development easily, with support for both REST and streaming data interfaces.)
+
+-----
+
+##  Installation Guide
+
+pandas: conda install pandas or pip install pandas
+pathlib: pip install pathlib
+requests: python -m pip install requests
+alpaca-trade-api: pip install alpaca-trade-api
+JSON: conda install -c jmcmurray json
 
 -----
 
