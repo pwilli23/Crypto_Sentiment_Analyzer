@@ -3,7 +3,9 @@ import pandas as pd
 import numpy as np
 import time
 
-df = pd.read_csv("prediction.csv")
+df = pd.read_csv("prediction.csv", index_col = "timestamp", parse_dates=True, infer_datetime_format = True)
+
+df.sort_index(inplace=True, ascending = False)
 
 def color_negative(val):
     color = 'green' if val else 'red'
@@ -31,7 +33,9 @@ st.header("DataFrame Prediction Key:")
 st.markdown("Green Highlight = We believe the market daily returns will be positive")  
 st.markdown("Red Highlight = We believe the market daily returns will be negative")
 
-st.dataframe(df.style.applymap(color_negative, subset=['Prediction','Actual']))
+start = st.selectbox("Choose a start date", df.index)
+end = st.selectbox("Choose an end date", df.index)
+st.dataframe(df[:][end:start].style.applymap(color_negative, subset=['Prediction','Actual']))
 
 
 
