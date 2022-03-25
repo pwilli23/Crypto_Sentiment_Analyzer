@@ -4,12 +4,12 @@
 
 ## Executive Summary
 
-The goal of this project is to help users understand the trends that are present in the current market so as to make better investment decisions when buying or selling cryptos. We will create a user friendly sentiment analyzer which focuses on Bitcoin and provides users with a bearish or bullish signal on any given day. The application should help users determine what to trade into and/or out of their portfolio.
+The goal of this project is to help users understand the trends that are present in the current market so as to make better investment decisions when buying or selling cryptos. We will create a user friendly sentiment analyzer which focuses on the cryto market and provides users with a bearish or bullish signal for Bitcoin on any given day. The application should help users determine what to trade into and/or out of their portfolio.
 
 In this Project, we will create and submit the following deliverables:
 
 - A Jupyter notebook that contains the following:
-    1. A time-series analysis on Bitcoin.
+    1. A time-series analysis on Bitcoin and Ethereum.
     2. Professionally styled and formatted visualizations.
 - An interactive Streamlit application that provides users with a forecast for bitcoin.
 
@@ -53,9 +53,9 @@ Import the following libraries:
 
 The `Crypto_Analyzer.ipynb` notebook will be used to complete the following tasks:
 
-- Use Alpaca APIs to retrieve the data for bitcoin.
+- Use Alpaca APIs to retrieve the data for ethereum and bitcoin.
 - Clean and prepare the data for the analysis and application.
-- Do a time-series analysis to make future predictions on the cryptocurrency.
+- Do a time-series analysis of the cryto market to make future predictions on bitcoin.
 - Provide an accuracy score to determine how likely it is that the predictions will be correct.
 
 The `streamlit.py` application will be used to complete the following tasks:
@@ -67,7 +67,7 @@ The `streamlit.py` application will be used to complete the following tasks:
 
 ## Results
 
-- Our prediction model recieved an accuracy score of 99 percent.
+- Our prediction model recieved an accuracy score of 79 percent. Thus, users of the streamlit application will make correct predictions approximately 4 out of 5 times.
 
 -----
 
@@ -85,12 +85,27 @@ To open the Streamlit application type the following command into your terminal:
 
 -----
 
+## Pain Points
+
+- We originally wanted to incorporate ten different cryptocurrencies into the portfolio but did not have enough time to do so.
+- Creating a LexBot seemed to be fairly simple but we ran into difficulties when we tried to incorporate Lambda.
+- We attempted to use questionary but found that it was not the most effective tool.
+
+-----
+
 ## Future Plans
 
 Future plans for this project include:
 
 - Incorporate a LexBot into the portfolio.
+
+<img width="335" alt="lex_1" src="https://user-images.githubusercontent.com/94569323/160175882-0fe9340f-ee26-4940-8ab2-6b3a059c4950.png">
+
+<img width="328" alt="lex_2" src="https://user-images.githubusercontent.com/94569323/160175905-9a65fe78-7ec3-4037-8ff8-56ce844ea2cd.png">
+
 - Incorporate a larger number of cryptocurrencies into the analyzer.
+
+<img width="633" alt="analyzer_8" src="https://user-images.githubusercontent.com/94569323/160176044-49ae8d54-48d6-4247-a642-9c7a3fe9747a.png">
 
 -----
 
